@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EC3_OsccoMontesAlvaro</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="boton">Ingresar</string>
+    <string name="camara">Activar camara</string>
+    <string name="version">Versión 1.0.0</string>
+    <string name="API_KEY">AIzaSyAHvr2uhtwsz_VpRXVa-hWfwhyQGypppm4</string>
+    <string name="informacion">Información</string>
+    <string name="descripcion">EC3 \nDesarrollo de Aplicaciones Móviles 2 \nAlvaro Manuel Oscco Montes \n6to Ciclo</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

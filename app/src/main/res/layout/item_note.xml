@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_item_note"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imgSimpson"
+            android:layout_width="85dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+        <TextView
+            android:id="@+id/txt_note_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#9E3333"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgSimpson"
+            app:layout_constraintTop_toTopOf="@+id/imgSimpson"
+            tools:text="Titulo 1" />
+
+        <TextView
+            android:id="@+id/txt_content_note"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:maxLines="5"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgSimpson"
+            app:layout_constraintTop_toBottomOf="@+id/txt_note_title"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida, dolor a pretium volutpat, sapien nisi egestas odio, eget suscipit orci urna et felis. Donec suscipit dignissim erat, a facilisis dui venenatis in." />
+
+        <TextView
+            android:id="@+id/txt_create_note"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/txt_lables_note"
+            app:layout_constraintStart_toEndOf="@+id/imgSimpson"
+            app:layout_constraintTop_toBottomOf="@+id/txt_content_note"
+            tools:text="Scientific | Space" />
+
+        <TextView
+            android:id="@+id/txt_lables_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_content_note"
+            tools:text="13/07/2023" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

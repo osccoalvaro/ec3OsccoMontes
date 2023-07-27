@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/note_graph"
+    app:startDestination="@id/noteListFragment">
+
+    <fragment
+        android:id="@+id/noteListFragment"
+        android:name="com.alvaro.ec3_osccomontesalvaro.ui.fragments.SimpsonListFragment"
+        android:label="fragment_note_list"
+        tools:layout="@layout/fragment_simpson_list" />
+    <fragment
+        android:id="@+id/noteFavoriteFragment"
+        android:name="com.alvaro.ec3_osccomontesalvaro.ui.fragments.SimpsonFavoriteFragment"
+        android:label="fragment_note_favorite"
+        tools:layout="@layout/fragment_simpson_favorite" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.alvaro.ec3_osccomontesalvaro.ui.fragments.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+</navigation>
